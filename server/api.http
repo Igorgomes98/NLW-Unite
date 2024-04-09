@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
- "title": "Unite Sumit",
- "details": "Um evento para quem é apaixonado por programação",
- "maximumAttendees": 100
+ "title": "Eventinho",
+ "details": "Um mini micro evento",
+ "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/bb8bd54b-c600-4280-a353-844aff70bcf4/attendees
+Content-Type: application/json
+
+{
+ "name": "Igor Gomes",
+ "email": "igorgomes_98@outlook.com"
+}
+
+###
+
+GET http://localhost:3333/events/bb8bd54b-c600-4280-a353-844aff70bcf4
+
+###
+
+GET http://localhost:3333/attendees/1/badge
